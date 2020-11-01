@@ -10,6 +10,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Introduction  
+$H_0$ The null hypothesis is that there is no difference in these models, either one is better than the other. 
+SH_A$ The alternative hypothesis is that there is a difference in these models and one is better than the other
 this is the linear model with prediction problem.
 Predict strength scores using data from the following website
 
@@ -72,7 +74,16 @@ model.3 <- lm(SIMS~ARM+GRIP,data=data)
 summary.lm(model.3)
 predict.lm(model.3,new,interval="prediction")
 ```
+##Compare the 2 models note adjR^2 is larger Residual SE is smaller in model.2
 
+```{r}
+anova(model.1,model.3)
+```
+
+
+## Conclusion
+
+Based on the p value, we reject the null hypothesis and conclude as we saw with the adjusted r square that model 2 is a better predictor than model 1.
 
 
 
