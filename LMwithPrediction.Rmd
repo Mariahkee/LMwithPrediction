@@ -83,7 +83,7 @@ anova(model.1,model.3)
 
 ## Conclusion
 
-Based on the p value, we reject the null hypothesis and conclude as we saw with the adjusted r square that model 2 is a better predictor than model 1.
+Based on the p value of 0.00000499 this is less than 0.05, so we reject the null hypothesis and conclude that model 3 is better than model 1 because it had the larger r square.
 
 
 
